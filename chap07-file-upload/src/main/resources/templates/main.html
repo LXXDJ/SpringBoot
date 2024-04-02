@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>File Upload 테스트</title>
+</head>
+<body>
+    <h1>single file upload</h1>
+    <form action="single-file" method="post" enctype="multipart/form-data">
+        <!-- accept 속성을 넣어주면 파일 선택 시, 해당 확장자 파일만 선택 가능 -->
+        파일 : <input type="file" name="singleFile" accept="image/jpeg, image/png"/><br/>
+        파일 설명 : <input type="text" name="singleFileDescription"/><br/>
+        <input type="submit"/>
+    </form>
+
+    <h1>multi file upload</h1>
+    <form action="multi-file" method="post" enctype="multipart/form-data">
+        파일 : <input type="file" name="multiFile" multiple /><br/>
+        파일 설명 : <input type="text" name="multiFileDescription"/><br/>
+        <input type="submit"/>
+    </form>
+</body>
+</html>

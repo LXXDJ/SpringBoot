@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>etc</title>
+</head>
+<body>
+    <h1>etc(기타)</h1>
+
+    <h3>th:with 지역 변수 지정하여 사용가능</h3>
+    <th:block th:with="start=${selectCriteria.startPage}, last=${selectCriteria.endPage}">
+        <th:block th:each="p : ${#numbers.sequence(start, last)}">
+            <button th:if="${selectCriteria.pageNo eq p}" th:text="${p}" disabled></button>
+            <button th:if="${selectCriteria.pageNo ne p}" th:text="${p}"></button>
+        </th:block>
+    </th:block>
+</body>
+</html>

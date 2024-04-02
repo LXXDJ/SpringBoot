@@ -26,9 +26,9 @@
     </th:block>
 
     <p th:if="${num > 200 or num < 0}">200 초과 또는 0 미만인 수</p>
-    <p th:if="${str != null and str == '바나나'}">바나나ㅏㅏㅏ</p>
+    <p th:if="${str != null and str == '바나나'}">바나나</p>
 
-    <p th:if="${ !#strings.isEmpty(str) and str == '바나나'}">ㅂㄴㄴ</p>
+    <p th:if="${ !#strings.isEmpty(str) and str == '바나나'}">바나나</p>
 
     <!--
         [Thymeleaf에서 기본 제공되는 Utility Objects]
