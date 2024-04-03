@@ -43,4 +43,11 @@ public class MethodMappingTestController {
 
         return "mappingResult";
     }
+
+    // 이건 안되네?
+    @RequestMapping
+    public String otherRequest(Model model){
+        model.addAttribute("message", "order 하위의 준비되지 않은 요청이 왔을 때 호출");
+        return "mappingResult";
+    }
 }
