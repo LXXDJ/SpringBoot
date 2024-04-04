@@ -40,7 +40,7 @@ public class FirstController {
     @PostMapping("modify")
 //    public String modifyMenu(Model model, @RequestParam String modifyName, @RequestParam int modifyPrice){
 //    public String modifyMenu(Model model, String modifyName, int modifyPrice){  // @RequestParam 생략가능 하지만, 명시적으로 적어줄 것을 권고
-    public String modifyMenuPrice(Model model, @RequestParam String modifyName, @RequestParam(defaultValue = "0") int modifyPrice){  //(defaultValue = "0")으로 미입력시 기본값 설정 가능
+    public String modifyMenuPrice(Model model, @RequestParam(required = false) String modifyName, @RequestParam(defaultValue = "0") int modifyPrice){  //(defaultValue = "0")으로 미입력시 기본값 설정 가능
         String message = modifyName + " 메뉴의 가격을 " + modifyPrice + "원으로 변경하였습니다.";
         model.addAttribute("message", message);
         return "first/messagePrinter";
