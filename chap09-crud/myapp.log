@@ -22,3 +22,27 @@
 2024-04-07T19:28:30.489+09:00  WARN 2776 --- [http-nio-8080-exec-6] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-6][menu/regist] Deprecated unwrapped fragment expression "common/header.html" found in template menu/regist, line 8, col 10. Please use the complete syntax of fragment expressions instead ("~{common/header.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
 2024-04-07T19:34:31.841+09:00  INFO 2776 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2024-04-07T19:34:31.860+09:00  INFO 2776 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-04-08T11:21:33.839+09:00  INFO 14528 --- [restartedMain] c.o.crud.configuration.Application       : Starting Application using Java 17.0.10 with PID 14528 (C:\dev\SpringBoot\chap09-crud\build\classes\java\main started by hi in C:\dev\SpringBoot\chap09-crud)
+2024-04-08T11:21:33.840+09:00  INFO 14528 --- [restartedMain] c.o.crud.configuration.Application       : No active profile set, falling back to 1 default profile: "default"
+2024-04-08T11:21:33.874+09:00  INFO 14528 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-04-08T11:21:33.874+09:00  INFO 14528 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-04-08T11:21:34.646+09:00  INFO 14528 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-04-08T11:21:34.654+09:00  INFO 14528 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-04-08T11:21:34.654+09:00  INFO 14528 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-08T11:21:34.699+09:00  INFO 14528 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-04-08T11:21:34.699+09:00  INFO 14528 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 824 ms
+2024-04-08T11:21:34.920+09:00  INFO 14528 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2024-04-08T11:21:35.110+09:00  INFO 14528 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-04-08T11:21:35.133+09:00  INFO 14528 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-04-08T11:21:35.139+09:00  INFO 14528 --- [restartedMain] c.o.crud.configuration.Application       : Started Application in 1.621 seconds (process running for 2.03)
+2024-04-08T11:21:37.879+09:00  INFO 14528 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-08T11:21:37.879+09:00  INFO 14528 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-04-08T11:21:37.880+09:00  INFO 14528 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-04-08T11:22:01.702+09:00  INFO 14528 --- [http-nio-8080-exec-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-04-08T11:22:01.888+09:00  INFO 14528 --- [http-nio-8080-exec-3] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@b95eb2e
+2024-04-08T11:22:01.889+09:00  INFO 14528 --- [http-nio-8080-exec-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-04-08T11:22:02.100+09:00  WARN 14528 --- [http-nio-8080-exec-3] o.t.s.p.StandardIncludeTagProcessor      : [THYMELEAF][http-nio-8080-exec-3][menu/list] Deprecated attribute {th:include,data-th-include} found in template menu/list, line 12, col 10. Please use {th:insert,data-th-insert} instead, this deprecated attribute will be removed in future versions of Thymeleaf.
+2024-04-08T11:22:02.103+09:00  WARN 14528 --- [http-nio-8080-exec-3] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-3][menu/list] Deprecated unwrapped fragment expression "common/header.html" found in template menu/list, line 12, col 10. Please use the complete syntax of fragment expressions instead ("~{common/header.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2024-04-08T11:22:03.404+09:00  WARN 14528 --- [http-nio-8080-exec-4] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-4][menu/regist] Deprecated unwrapped fragment expression "common/header.html" found in template menu/regist, line 8, col 10. Please use the complete syntax of fragment expressions instead ("~{common/header.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2024-04-08T12:59:56.962+09:00  INFO 14528 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-04-08T12:59:56.970+09:00  INFO 14528 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
