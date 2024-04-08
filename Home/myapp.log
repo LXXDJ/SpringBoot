@@ -268,3 +268,41 @@
 2024-04-07T20:55:22.191+09:00  WARN 13560 --- [http-nio-8080-exec-7] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public java.lang.String com.ohgiraffers.home.menu.controller.MenuController.registMenu(com.ohgiraffers.home.menu.model.dto.MenuDTO,org.springframework.web.servlet.mvc.support.RedirectAttributes,java.util.Locale): [Field error in object 'menuDTO' on field 'menuPrice': rejected value [D]; codes [typeMismatch.menuDTO.menuPrice,typeMismatch.menuPrice,typeMismatch.int,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [menuDTO.menuPrice,menuPrice]; arguments []; default message [menuPrice]]; default message [Failed to convert property value of type 'java.lang.String' to required type 'int' for property 'menuPrice'; For input string: "D"]] ]
 2024-04-07T20:55:40.228+09:00  INFO 13560 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Shutdown initiated...
 2024-04-07T20:55:40.232+09:00  INFO 13560 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Shutdown completed.
+2024-04-08T10:10:15.061+09:00  INFO 15180 --- [restartedMain] c.o.home.configuration.Application       : Starting Application using Java 17.0.10 with PID 15180 (C:\dev\SpringBoot\Home\build\classes\java\main started by hi in C:\dev\SpringBoot\Home)
+2024-04-08T10:10:15.062+09:00  INFO 15180 --- [restartedMain] c.o.home.configuration.Application       : No active profile set, falling back to 1 default profile: "default"
+2024-04-08T10:10:15.094+09:00  INFO 15180 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-04-08T10:10:15.095+09:00  INFO 15180 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-04-08T10:10:15.870+09:00  INFO 15180 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-04-08T10:10:15.878+09:00  INFO 15180 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-04-08T10:10:15.878+09:00  INFO 15180 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-08T10:10:15.913+09:00  INFO 15180 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-04-08T10:10:15.914+09:00  INFO 15180 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 819 ms
+2024-04-08T10:10:16.156+09:00  INFO 15180 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2024-04-08T10:10:16.350+09:00  INFO 15180 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-04-08T10:10:16.373+09:00  INFO 15180 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-04-08T10:10:16.380+09:00  INFO 15180 --- [restartedMain] c.o.home.configuration.Application       : Started Application in 1.651 seconds (process running for 2.194)
+2024-04-08T10:10:18.499+09:00  INFO 15180 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-08T10:10:18.499+09:00  INFO 15180 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-04-08T10:10:18.500+09:00  INFO 15180 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-04-08T10:10:20.115+09:00  INFO 15180 --- [http-nio-8080-exec-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-04-08T10:10:20.331+09:00  INFO 15180 --- [http-nio-8080-exec-3] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@518ea46
+2024-04-08T10:10:20.332+09:00  INFO 15180 --- [http-nio-8080-exec-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-04-08T10:10:45.998+09:00  WARN 15180 --- [http-nio-8080-exec-7] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public java.lang.String com.ohgiraffers.home.menu.controller.MenuController.registMenu(com.ohgiraffers.home.menu.model.dto.MenuDTO,org.springframework.web.servlet.mvc.support.RedirectAttributes,java.util.Locale): [Field error in object 'menuDTO' on field 'menuPrice': rejected value [d]; codes [typeMismatch.menuDTO.menuPrice,typeMismatch.menuPrice,typeMismatch.int,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [menuDTO.menuPrice,menuPrice]; arguments []; default message [menuPrice]]; default message [Failed to convert property value of type 'java.lang.String' to required type 'int' for property 'menuPrice'; For input string: "d"]] ]
+2024-04-08T10:14:49.232+09:00  INFO 15180 --- [http-nio-8080-exec-9] c.o.home.menu.controller.MenuController  : menu: MenuDTO{menuCode=0, menuName='d', menuPrice=1, categoryCode=1, orderableStatus='Y'}
+2024-04-08T10:14:49.234+09:00  WARN 15180 --- [http-nio-8080-exec-9] c.o.home.menu.controller.MenuController  : menu: MenuDTO{menuCode=0, menuName='d', menuPrice=1, categoryCode=1, orderableStatus='Y'}
+2024-04-08T10:14:49.234+09:00 ERROR 15180 --- [http-nio-8080-exec-9] c.o.home.menu.controller.MenuController  : menu: MenuDTO{menuCode=0, menuName='d', menuPrice=1, categoryCode=1, orderableStatus='Y'}
+2024-04-08T10:15:34.452+09:00  INFO 15180 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 6 class path changes (0 additions, 0 deletions, 6 modifications)
+2024-04-08T10:15:34.460+09:00  INFO 15180 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-04-08T10:15:34.465+09:00  INFO 15180 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-04-08T10:15:34.527+09:00  INFO 15180 --- [restartedMain] c.o.home.configuration.Application       : Starting Application using Java 17.0.10 with PID 15180 (C:\dev\SpringBoot\Home\build\classes\java\main started by hi in C:\dev\SpringBoot\Home)
+2024-04-08T10:15:34.528+09:00  INFO 15180 --- [restartedMain] c.o.home.configuration.Application       : No active profile set, falling back to 1 default profile: "default"
+2024-04-08T10:15:34.730+09:00  INFO 15180 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-04-08T10:15:34.730+09:00  INFO 15180 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-04-08T10:15:34.730+09:00  INFO 15180 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-08T10:15:34.743+09:00  INFO 15180 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-04-08T10:15:34.743+09:00  INFO 15180 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 213 ms
+2024-04-08T10:15:34.785+09:00  INFO 15180 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2024-04-08T10:15:34.824+09:00  INFO 15180 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-04-08T10:15:34.831+09:00  INFO 15180 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-04-08T10:15:34.834+09:00  INFO 15180 --- [restartedMain] c.o.home.configuration.Application       : Started Application in 0.328 seconds (process running for 320.626)
+2024-04-08T10:15:34.835+09:00  INFO 15180 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged

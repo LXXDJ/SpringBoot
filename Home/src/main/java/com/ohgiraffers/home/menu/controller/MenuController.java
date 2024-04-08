@@ -50,7 +50,7 @@ public class MenuController {
         logger.error("menu: {}", menu);
 
         menuService.registMenu(menu);
-        rttr.addFlashAttribute("successMessage", "신규메뉴 등록 성공");
+        rttr.addFlashAttribute("successMessage", messageSource.getMessage("registMenu", null, locale));
         return "redirect:/menu/list";
     }
 }
